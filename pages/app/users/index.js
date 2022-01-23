@@ -8,7 +8,7 @@ const Users = ({ data }) => {
                     <ul>
                         {
                             data.map(user => (
-                                <li key={user.id} className="my-5 border p-5 border-black rounded-lg bg-gray-50">
+                                <li key={user.id} className="my-5 border p-5 border-black rounded-lg bg-gray-50 hover:shadow-lg hover:bg-black hover:text-white">
                                     <h1>Name: {user.name}</h1>
                                     <p>Website: {user.website}</p>
                                     <p>Phone: {user.phone}</p>
