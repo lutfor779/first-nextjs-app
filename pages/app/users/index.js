@@ -2,7 +2,7 @@ import Layout from "../../../components/Layouts/Layout";
 
 const Users = ({ data }) => {
     return (
-        <Layout title={'Users'}>
+        <Layout title={"Users"}>
             <section>
                 <div>
                     <ul>
@@ -19,8 +19,8 @@ const Users = ({ data }) => {
                 </div>
             </section>
         </Layout>
-    )
-}
+    );
+};
 
 Users.getInitialProps = async () => {
     const res = await (await fetch("https://jsonplaceholder.typicode.com/users"));
@@ -28,7 +28,7 @@ Users.getInitialProps = async () => {
     const data = await res.json();
     return {
         data
-    }
-}
+    };
+};
 
 export default Users;
