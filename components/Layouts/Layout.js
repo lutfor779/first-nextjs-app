@@ -19,7 +19,7 @@ const Layout = ({ children, title }) => {
                 <Footer />
             </section>
         </Fragment>
-    )
-}
+    );
+};
 
 export default Layout;

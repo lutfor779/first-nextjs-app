@@ -1,3 +1,30 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": ["eslint:recommended", "next"],
+  "settings": {
+    "next": {
+      "version": "detect"
+    }
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "modules": true,
+      "jsx": true
+    },
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "@next/next/no-page-custom-font": "off",
+    "semi": ["error", "always"],
+    "quotes": ["error", "double"]
+  }
 }
