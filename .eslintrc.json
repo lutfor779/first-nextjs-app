@@ -4,27 +4,34 @@
     "es2021": true,
     "jest": true
   },
-  "extends": ["eslint:recommended", "next"],
+  "extends": ["airbnb", "prettier"],
   "settings": {
     "next": {
       "version": "detect"
     }
   },
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaFeatures": {
       "modules": true,
-      "jsx": true
+      "jsx": true,
+      "experimentalObjectRestSpread": true
     },
     "ecmaVersion": 6,
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": ["prettier"],
   "rules": {
     "react/no-unescaped-entities": "off",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-props-no-spreading": "off",
     "@next/next/no-page-custom-font": "off",
     "semi": ["error", "always"],
-    "quotes": ["error", "double"]
+    "quotes": ["error", "single"],
+    "prettier/prettier": "warn",
+    "no-unused-vars": "warn",
+    "no-console": "warn"
   }
 }
