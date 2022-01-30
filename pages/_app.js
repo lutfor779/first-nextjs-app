@@ -1,12 +1,13 @@
+import 'antd/dist/antd.css';
 import AuthContextProvider from '../contexts/auth';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <AuthContextProvider>
-      <Component {...pageProps} />
-    </AuthContextProvider>
-  );
+    return (
+        <AuthContextProvider>
+            <Component {...pageProps} />
+        </AuthContextProvider>
+    );
 }
 
 export default MyApp;

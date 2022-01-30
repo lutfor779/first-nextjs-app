@@ -4,7 +4,7 @@
     "es2021": true,
     "jest": true
   },
-  "extends": ["airbnb", "prettier"],
+  "extends": ["airbnb", "prettier", "next"],
   "settings": {
     "next": {
       "version": "detect"
@@ -30,7 +30,11 @@
     "@next/next/no-page-custom-font": "off",
     "semi": ["error", "always"],
     "quotes": ["error", "single"],
-    "prettier/prettier": "warn",
+    "prettier/prettier": [
+      "warn",
+      { "singleQuote": true, "parser": "flow", "tabWidth": 4 }
+    ],
+    "array-callback-return": "off",
     "no-unused-vars": "warn",
     "no-console": "warn"
   }
